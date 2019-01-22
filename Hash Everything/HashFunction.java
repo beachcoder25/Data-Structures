@@ -2,6 +2,9 @@ package hashing;
 
 import java.util.Arrays;
 
+
+// Source: Derek Banas YT - https://www.youtube.com/watch?v=B4vqVDeERhI
+
 public class HashFunction {
 
 	String[] theArray;
@@ -140,7 +143,7 @@ public class HashFunction {
 		
 		int arrayIndexHash = Integer.parseInt(key) % 29; // Calculates "index"
 		
-		while (theArray[arrayIndexHash] != "-1") {
+		while (theArray[arrayIndexHash] != "-1") { // While NOT empty
 			
 			if(theArray[arrayIndexHash] == key) {
 				
